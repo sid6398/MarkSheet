@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>MarkSheet</title>
+</head>
+<body style="background-color:aquamarine !important;">
+<div class="container fw-bold">
+    <div class="row">
+        <div class="col-8 m-auto bg-dark text-white p-4">
+            <h4 class="text-center">MarkSheet</h4>
+        </div>
+    </div>    
+       <div class="row">
+        <div class="col-lg-8 bg-white p-5 col-md-12 m-auto d-flex justify-content-around">
+            <div class="col-md-4">
+        <div class="sub1 mb-3">
+            <label for="eng">English</label>
+            <input class="form-control" type="number" name="eng" id="eng" maxlength="100" size="100" placeholder="Enter your Marks">
+        </div>
+        <div class="sub2 mb-3">
+            <label for="phy">Physics</label>
+            <input class="form-control" type="number" name="phy" id="phy" maxlength="100" size="100"  placeholder="Enter your Marks">
+        </div>
+        <div class="sub3 mb-3">
+            <label for="chem">Chemistry</label>
+            <input class="form-control" type="number" name="chem" id="chem" maxlength="100" placeholder="Enter your Marks">
+        </div>
+        <div class="sub4 mb-3">
+            <label for="maths">Maths</label>
+            <input class="form-control" type="number" name="maths" id="maths" maxlength="100" placeholder="Enter your Marks">
+        </div>
+        <div class="sub5 mb-3">
+            <label for="comp1">Computer-Science 1</label>
+            <input class="form-control" type="number" name="comp1" id="comp1" maxlength="100" placeholder="Enter your Marks">
+        </div>
+        <div class="sub6 mb-3">
+            <label for="comp2">Computer Science 2</label>
+            <input class="form-control" type="number" name="comp2" id="comp2" maxlength="100" placeholder="Enter your Marks">
+        </div>
+        <div>
+            <button class="btn btn-warning col-12" onclick="calculate()">Calculate</button>
+        </div> 
+    </div>
+    <div class="col-md-4 d-flex align-items-center">
+        <div>
+            <table class="table table-bordered border-dark">
+                        <tr>
+                            <td>Total Marks:</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>Obtained Marks:</td>
+                            <td id ="obtain"></td>
+                        </tr>
+                        <tr>
+                            <td>Percentage</td>
+                            <td id="per"></td>
+                        </tr>
+                        <tr>
+                            <td>Grade</td>
+                            <td id="grade"></td>
+                        </tr>
+                        <tr>
+                            <td>Remarks</td>
+                            <td id="remarks"></td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
